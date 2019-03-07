@@ -1,11 +1,13 @@
-h1 Hello
+div class="login_page_h1"
+    h1 Logga in
 
 
+div class="inloggning"
+    form action="/logga_in" method="post"
+        input type="text" placeholder="Enter name" name="username"
+        input type="password" placeholder="Enter password" name="password"
+        input type="submit" value="Login"
 
-form action="/logga_in" method="post"
-    input type="text" placeholder="Enter name" name="username"
-    input type="password" placeholder="Enter password" name="password"
-    input type="submit" value="Submit"
-
-form action="/register"
-    input type="submit" value="Registrera"
+div class="registrering_knapp"
+    form action="/register"
+        input type="submit" value="Registrera"
