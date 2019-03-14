@@ -73,10 +73,9 @@ header .login{
 .skapa_inlägg input{
     width: 100%;
     box-sizing: border-box;
+    height: 30px;
 }
 
 .skriva_inlägg_textruta input{
     height: 150px;
-    resize: none;
-    word-break: break-word;
 }

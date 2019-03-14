@@ -1,6 +1,6 @@
 div class="skapa_inlägg"
     form action="/create_post" method="post"
-        input type="text" placeholder="Bildaddress" name="bildadress"
+        input type="file" name="blogg_bild"
         div class="skriva_inlägg_textruta"
-            input type="text" placeholder="Skriv inlägg här" name="inlägg"
+            textarea rows="20" cols="50" placeholder="Skriv inlägg här" name="post"
         input type="submit" value="Skapa inlägg!"
