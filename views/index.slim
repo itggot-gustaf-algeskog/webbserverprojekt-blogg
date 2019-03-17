@@ -1,10 +1,19 @@
 header
     button
         a href="/skapa_inlägg" Gör ett inlägg!
-    div class="login"
-        a href="/login" Login
+    - if session[:id] != nil
+        div class="user"
+            a href="/profile" #{session[:username]}
+    - else
+        div class="login"
+            a href="/login" Login
+    
+div class="posts"
+    - posts.each do |post|
+        h3 = post[0]
+        img src = post[1]
+        - if session[:poster] == session[:username] and session[:id] != nil
+            
+            a href="/edit_post/#{post["Postid"]}" Edit post
 
-- posts.each do |post|
-    h3 = post[0]
-    img src = post[1]
 

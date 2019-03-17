@@ -1,0 +1,13 @@
+
+div class="profile"
+    - profiles.each do |profile|
+        h3 = profile[0]
+        h3 = profile[1]
+        h3 = profile[2]
+        h3 = profile[3]
+        h3 = profile[4]
+
+a href="/edit_profile" Edit profile
+
+form action="/logout" method="post"
+    input type="submit" value="Logout"

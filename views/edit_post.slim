@@ -1,0 +1,9 @@
+div class="redigera_inlägg"
+    form action="/redigera" method="post"
+        input type="file" name="update_blogg_bild"
+        div class="skriva_inlägg_textruta"
+            textarea rows="20" cols="50" placeholder="Skriv inlägg här" name="update_post"
+        input type="submit" value="Uppdatera inlägg!"
+
+form action="/delete_post" method="post"
+    input type="submit" value="Delete post"
