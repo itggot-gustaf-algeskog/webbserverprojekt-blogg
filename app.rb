@@ -167,3 +167,7 @@ post('/redigera') do
 
     redirect('/')
 end
+
+get('/no_access') do
+    slim(:no_access)
+end
